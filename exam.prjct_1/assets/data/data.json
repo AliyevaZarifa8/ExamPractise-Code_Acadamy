@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "cards_name": "En Yaxsi Muellim-Hayat!",
+      "price": "238",
+      "photo": "./assets/image/ekrn.jpg",
+      "id": 3
+    },
+    {
+      "cards_name": "Hayat Cetinliklerle Dolu!",
+      "price": "48",
+      "photo": "./assets/image/modern-wallpaper-99.jpg",
+      "id": 4
+    },
+    {
+      "cards_name": "Aliyev Yahya",
+      "price": "678",
+      "photo": "./assets/image/car2.jpg",
+      "id": 5
+    },
+    {
+      "cards_name": "Aliyeva Zarifa",
+      "price": "382",
+      "photo": "./assets/image/cla.jpeg",
+      "id": 6
+    },
+    {
+      "cards_name": "Aliyeva Xeyransa",
+      "price": "798",
+      "photo": "./assets/image/anmltwo1.jpg",
+      "id": 7
+    }
+  ],
+  "basket": [
+    {
+      "cards_name": "Aliyeva Zarifa",
+      "price": "198098676654798756554433443",
+      "photo": "./assets/image/cla.jpeg",
+      "id": 6
+    },
+    {
+      "cards_name": "Aliyev Yahya",
+      "price": "43234456789865432",
+      "photo": "./assets/image/car2.jpg",
+      "id": 5
+    },
+    {
+      "cards_name": "Aliyeva Xeyransa",
+      "price": "7938767362",
+      "photo": "./assets/image/anmltwo1.jpg",
+      "id": 7
+    }
+  ]
+}

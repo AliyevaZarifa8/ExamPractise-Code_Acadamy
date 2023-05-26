@@ -1,0 +1,41 @@
+#details {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+
+  h1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 5vh;
+  }
+  .details {
+    .crud-card {
+      text-align: center;
+      border: 2px solid red;
+      border-radius: 9px;
+      padding: 7px 0;
+
+      img {
+        margin: 4px 10px;
+        border-radius: 7px;
+        height: 50vh;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      span {
+        font-weight: bold;
+        font-size: larger;
+      }
+      .crud-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 90%;
+          color: gray;
+        }
+      }
+    }
+  }
+}

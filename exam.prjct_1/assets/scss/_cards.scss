@@ -1,0 +1,89 @@
+#cards {
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+
+  #search-sort {
+    input {
+      height: 40px;
+      outline: none;
+      border: 2px solid palevioletred;
+      &::placeholder {
+        color: purple;
+      }
+    }
+    button {
+      padding: 5px 27px;
+      border-radius: 5px;
+      color: palevioletred;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .crud-cards {
+    border: 3px solid pink;
+    padding: 10px;
+    display: flex;
+    // gap: 10px;
+
+    .crud-card {
+      text-align: center;
+      border: 2px solid red;
+      border-radius: 9px;
+      padding: 7px 0;
+
+      img {
+        margin: 4px 10px;
+        border-radius: 7px;
+        height: 30vh;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      span {
+        font-weight: bold;
+        font-size: larger;
+      }
+      .crud-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 90%;
+          color: gray;
+        }
+      }
+      #a-tag {
+        border: 2px solid red;
+        border-radius: 7px;
+        padding: 7px 17px;
+        background-color: transparent;
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: #fff;
+          background-color: rgb(207, 66, 87);
+        }
+      }
+      #icon {
+        padding: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 27px;
+        font-size: 23px;
+        height: 14vh;
+        #edit {
+          color: green;
+          font-size: 25px;
+        }
+        #delete {
+          color: red;
+        }
+        #basket {
+          color: rgb(194, 194, 16);
+        }
+      }
+    }
+  }
+}

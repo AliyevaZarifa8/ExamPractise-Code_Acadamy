@@ -1,0 +1,43 @@
+header {
+  background-color: palevioletred;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    img {
+      width: 70px;
+      border-radius: 7px;
+    }
+    #ul {
+      display: flex;
+      margin: auto 0;
+      column-gap: 30px;
+      align-items: center;
+      li {
+        .nav-element {
+          text-decoration: none;
+          color: black;
+          border: 2px solid transparent;
+          padding: 8px 17px;
+          border-radius: 7px;
+          &:hover {
+            border-color: red;
+          }
+        }
+        button {
+          border: 2px solid transparent;
+          padding: 7px 15px;
+          border-radius: 7px;
+          &:hover {
+            border-color: red;
+          }
+        }
+      }
+    }
+  }
+}

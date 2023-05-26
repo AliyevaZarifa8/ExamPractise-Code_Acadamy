@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background-color: palevioletred;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+header nav img {
+  width: 70px;
+  border-radius: 7px;
+}
+header nav #ul {
+  display: flex;
+  margin: auto 0;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+}
+header nav #ul li .nav-element {
+  text-decoration: none;
+  color: black;
+  border: 2px solid transparent;
+  padding: 8px 17px;
+  border-radius: 7px;
+}
+header nav #ul li .nav-element:hover {
+  border-color: red;
+}
+header nav #ul li button {
+  border: 2px solid transparent;
+  padding: 7px 15px;
+  border-radius: 7px;
+}
+header nav #ul li button:hover {
+  border-color: red;
+}
+
+#cards {
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+}
+#cards #search-sort input {
+  height: 40px;
+  outline: none;
+  border: 2px solid palevioletred;
+}
+#cards #search-sort input::-moz-placeholder {
+  color: purple;
+}
+#cards #search-sort input:-ms-input-placeholder {
+  color: purple;
+}
+#cards #search-sort input::placeholder {
+  color: purple;
+}
+#cards #search-sort button {
+  padding: 5px 27px;
+  border-radius: 5px;
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 18px;
+}
+#cards .crud-cards {
+  border: 3px solid pink;
+  padding: 10px;
+  display: flex;
+}
+#cards .crud-cards .crud-card {
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 9px;
+  padding: 7px 0;
+}
+#cards .crud-cards .crud-card img {
+  margin: 4px 10px;
+  border-radius: 7px;
+  height: 30vh;
+}
+#cards .crud-cards .crud-card h2 {
+  font-size: 25px;
+}
+#cards .crud-cards .crud-card span {
+  font-weight: bold;
+  font-size: larger;
+}
+#cards .crud-cards .crud-card .crud-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cards .crud-cards .crud-card .crud-text p {
+  width: 90%;
+  color: gray;
+}
+#cards .crud-cards .crud-card #a-tag {
+  border: 2px solid red;
+  border-radius: 7px;
+  padding: 7px 17px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+#cards .crud-cards .crud-card #a-tag:hover {
+  color: #fff;
+  background-color: rgb(207, 66, 87);
+}
+#cards .crud-cards .crud-card #icon {
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  font-size: 23px;
+  height: 14vh;
+}
+#cards .crud-cards .crud-card #icon #edit {
+  color: green;
+  font-size: 25px;
+}
+#cards .crud-cards .crud-card #icon #delete {
+  color: red;
+}
+#cards .crud-cards .crud-card #icon #basket {
+  color: rgb(194, 194, 16);
+}
+
+#add-edit {
+  margin-top: 19vh;
+  margin-bottom: 14vh;
+}
+#add-edit h1 {
+  text-align: center;
+  color: rgb(152, 225, 43);
+  margin-bottom: 6vh;
+}
+#add-edit #form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+#add-edit #form form {
+  width: 40%;
+}
+
+#basket {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+#basket h1 {
+  text-align: center;
+  color: rgb(236, 236, 47);
+  margin-bottom: 10vh;
+}
+#basket .basket .crud-card {
+  text-align: center;
+  border: 2px solid rgb(216, 231, 7);
+  border-radius: 9px;
+  padding: 7px 0;
+}
+#basket .basket .crud-card img {
+  margin: 4px 10px;
+  border-radius: 7px;
+  height: 30vh;
+}
+#basket .basket .crud-card h2 {
+  font-size: 23px;
+}
+#basket .basket .crud-card span {
+  font-weight: bold;
+  font-size: larger;
+}
+#basket .basket .crud-card .crud-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#basket .basket .crud-card .crud-text p {
+  width: 90%;
+  color: gray;
+}
+#basket .basket .crud-card #a-tag {
+  border: 2px solid yellow;
+  border-radius: 7px;
+  padding: 7px 17px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+#basket .basket .crud-card #a-tag:hover {
+  color: #fff;
+  background-color: rgb(245, 236, 65);
+}
+#basket .basket .crud-card #delete {
+  color: red;
+  padding: 20px;
+  font-size: 27px;
+}
+
+#details {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+#details h1 {
+  text-align: center;
+  color: red;
+  margin-bottom: 5vh;
+}
+#details .details .crud-card {
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 9px;
+  padding: 7px 0;
+}
+#details .details .crud-card img {
+  margin: 4px 10px;
+  border-radius: 7px;
+  height: 50vh;
+}
+#details .details .crud-card h2 {
+  font-size: 25px;
+}
+#details .details .crud-card span {
+  font-weight: bold;
+  font-size: larger;
+}
+#details .details .crud-card .crud-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#details .details .crud-card .crud-text p {
+  width: 90%;
+  color: gray;
+}
+
+footer {
+  background-color: palevioletred;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+footer i {
+  color: rgb(215, 44, 215);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

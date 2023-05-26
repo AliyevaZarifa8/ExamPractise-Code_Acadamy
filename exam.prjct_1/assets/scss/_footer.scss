@@ -1,0 +1,16 @@
+footer {
+  background-color: palevioletred;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+
+  i {
+    color: rgb(215, 44, 215);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
