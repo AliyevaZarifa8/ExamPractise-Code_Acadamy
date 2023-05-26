@@ -1,1 +1,1 @@
-#{red}ExamPractise-Code_Acadamy
+#{#redExamPractise-Code_Acadamy
