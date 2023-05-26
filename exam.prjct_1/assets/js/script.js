@@ -3,30 +3,24 @@ const basketUrl = "http://localhost:8080/basket";
 let searchInp = document.querySelector("#searchinp");
 let sortBtn = document.querySelector("#sortbtn");
 let crudCards = document.querySelector(".crud-cards");
+let showMore = document.querySelector("#showMore");
 let getallData = [];
 let filteredData = [];
 let sortedData = [];
-let everyfilterData=[];
-let showmoreData = [];
 let maxLength = 3;
 let sort = "asc";
 
-// async function getData() {
-//   const res = await axios(cardUrl);
-//   const data = await res.data;
-// }
-// getData();
 
 async function drawCard() {
   const res = await axios(cardUrl);
   const data = await res.data;
-  //    getData()
-  //   sortedData = data;
   getallData = data;
-  showmoreData = data.slice(0, maxLength);
+  console.log(maxLength);
   crudCards.innerHTML = "";
   filteredData =
-    filteredData.length || searchInp.value ? filteredData : getallData;
+    filteredData.length || searchInp.value
+      ? filteredData.slice(0, maxLength)
+      : getallData.slice(0, maxLength);
   filteredData.forEach((element) => {
     crudCards.innerHTML += `
     <div class="col-4 crud-card card">
@@ -66,7 +60,7 @@ searchInp.addEventListener("input", function (e) {
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase());
   });
-  everyfilterData=filteredData
+  everyfilterData = filteredData;
   drawCard();
 });
 
@@ -95,3 +89,9 @@ async function addBasket(id) {
   let obj = res.data;
   await axios.post(basketUrl, obj);
 }
+
+
+showMore.addEventListener("click", function () {
+  maxLength+=3;
+  drawCard();
+});
