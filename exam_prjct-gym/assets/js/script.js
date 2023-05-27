@@ -63,6 +63,7 @@ showMore.addEventListener("click", function () {
   maxLength += 3;
   filteredData = getallData.slice(0, maxLength);
   drawCard();
+ 
 });
 
 searchInp.addEventListener("input", function (e) {
@@ -72,10 +73,11 @@ searchInp.addEventListener("input", function (e) {
       .includes(e.target.value.toLocaleLowerCase());
   });
   drawCard();
+  getallData=filteredData
 });
 
 sortBtn.addEventListener("click", function () {
-  sortedData = filteredData.slice(0, maxLength);
+  sortedData = filteredData;
   if (sort == "asc") {
     sortBtn.innerHTML = "Sort By Asc";
     sort = "dcs";
@@ -85,10 +87,11 @@ sortBtn.addEventListener("click", function () {
   } else if (sort == "dcs") {
     sortBtn.innerHTML = "Sort By Dcs";
     sort = "def";
-    sortedData.sort((a, b) => a.price - b.price);
+    sortedData.sort((a, b) => b.price - a.price);
 
     drawCard();
   } else {
+    filteredData=getallData
     sortBtn.innerHTML = "Sort By";
     sort = "asc";
     drawCard();

@@ -1,9 +1,9 @@
 {
   "card": [
     {
-      "photo": "./assets/image/hero-banner.jpg",
+      "photo": "./assets/image/o1.png",
       "title": "Regular Exercise",
-      "price": "2988",
+      "price": "453",
       "text": "Who are in extremely love with eco friendly",
       "id": 1
     },
@@ -36,9 +36,9 @@
       "id": 5
     },
     {
-      "photo": "./assets/image/c5.jpg",
+      "photo": "./assets/image/hero-banner.jpg",
       "title": "Mollit et deserunt r",
-      "price": "839",
+      "price": "998",
       "text": "Neque delectus esse",
       "id": 6
     },
@@ -55,6 +55,34 @@
       "price": "242",
       "text": "Voluptate deserunt f",
       "id": 8
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Dolorem id eos ex t",
+      "price": "938",
+      "text": "Elit iste rerum ut ",
+      "id": 9
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "dolerm alias magna illu",
+      "price": "178",
+      "text": "Natus et voluptas do",
+      "id": 10
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "dolerm sed volupta",
+      "price": "908",
+      "text": "Reprehenderit in se",
+      "id": 11
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "dolerm alias molestiae ",
+      "price": "897",
+      "text": "Sequi aliquip aut ut",
+      "id": 12
     }
   ],
   "basket": [
