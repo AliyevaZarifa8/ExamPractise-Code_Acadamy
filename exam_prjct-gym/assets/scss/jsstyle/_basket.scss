@@ -1,0 +1,51 @@
+#basket {
+  margin-top: 20vh;
+  h1 {
+    text-align: center;
+    color: orangered;
+  }
+  .basket {
+    margin-top: 5vh;
+    .dinamc-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 17px 0;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      img {
+        width: 80px;
+      }
+      .dinamc-parag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 70%;
+          color: grey;
+        }
+      }
+      button {
+        color: red;
+        &:hover {
+          background-color: red;
+          color: #fff;
+        }
+      }
+      #icon {
+        display: flex;
+        align-items: center;
+        column-gap: 17px;
+        font-size: 20px;
+
+        #delete {
+          color: red;
+        }
+      }
+    }
+  }
+}

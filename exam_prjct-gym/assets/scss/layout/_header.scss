@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: #fff;
+
+  .header-top {
+    border: 1px solid rgb(207, 201, 201);
+    #header-top {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 11vh;
+      .heading {
+        display: flex;
+        justify-content: start;
+        h5 {
+          width: 70%;
+          font-size: medium;
+        }
+      }
+      .tel-icon {
+        display: flex;
+        align-items: center;
+        column-gap: 19px;
+        i {
+          background-color: #f7204b;
+          padding: 27px;
+          color: #fff;
+          font-size: larger;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    #ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      height: 8vh;
+      margin: auto 0;
+      li {
+        #a-tag {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          transition: 1s;
+          &:hover {
+            color: #f7204b;
+          }
+        }
+        #dropdownMenuButton1 {
+          color: black;
+          font-weight: 500;
+          transition: 1s;
+          &:hover {
+            color: #f7204b;
+          }
+        }
+      }
+    }
+  }
+}

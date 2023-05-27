@@ -1,0 +1,76 @@
+{
+  "card": [
+    {
+      "photo": "./assets/image/hero-banner.jpg",
+      "title": "Regular Exercise",
+      "price": "2988",
+      "text": "Who are in extremely love with eco friendly",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "photo": "./assets/image/o2.png",
+      "title": "The Upper Eye",
+      "price": 245,
+      "text": "Who are in extremely love with eco friendly"
+    },
+    {
+      "id": 3,
+      "photo": "./assets/image/o3.png",
+      "title": "The Upper Eye",
+      "price": 967,
+      "text": "Who are in extremely love with eco friendly"
+    },
+    {
+      "id": 4,
+      "photo": "./assets/image/o1.png",
+      "title": "The Upper Eye",
+      "price": 549,
+      "text": "Who are in extremely love with eco friendly"
+    },
+    {
+      "photo": "./assets/image/logo (2).png",
+      "title": "Sit non consequatur",
+      "price": "835",
+      "text": "Sit et et provident",
+      "id": 5
+    },
+    {
+      "photo": "./assets/image/c5.jpg",
+      "title": "Mollit et deserunt r",
+      "price": "839",
+      "text": "Neque delectus esse",
+      "id": 6
+    },
+    {
+      "photo": "./assets/image/o3.png",
+      "title": "Labore eos impedit ",
+      "price": "704",
+      "text": "Sequi ea at sapiente",
+      "id": 7
+    },
+    {
+      "photo": "./assets/image/desktop-wallpaper-gradient-white-pink-linear-ffffff-ffc0cb-225a°-thumbnail.jpg",
+      "title": "Consequuntur dolores",
+      "price": "242",
+      "text": "Voluptate deserunt f",
+      "id": 8
+    }
+  ],
+  "basket": [
+    {
+      "id": 2,
+      "photo": "./assets/image/o2.png",
+      "title": "The Upper Eye",
+      "price": 245,
+      "text": "Who are in extremely love with eco friendly"
+    },
+    {
+      "id": 3,
+      "photo": "./assets/image/o3.png",
+      "title": "The Upper Eye",
+      "price": 967,
+      "text": "Who are in extremely love with eco friendly"
+    }
+  ]
+}

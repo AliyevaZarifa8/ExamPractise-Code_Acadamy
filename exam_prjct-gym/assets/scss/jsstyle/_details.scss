@@ -1,0 +1,38 @@
+#details {
+  margin-top: 20vh;
+  h1 {
+    text-align: center;
+    color: red;
+  }
+  .details {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dinamc-card {
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 17px 0;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      img {
+        width: 80px;
+      }
+      .dinamc-parag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 90%;
+          color: grey;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+#hero-banner {
+  margin-top: 20vh;
+  height: 80vh;
+  background-image: url("../image/hero-banner.jpg");
+  background-size: cover;
+
+  .hero-text {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    #hero-text {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      padding-bottom: 80px;
+      h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 67px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

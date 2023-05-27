@@ -1,0 +1,387 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: #fff;
+}
+header .header-top {
+  border: 1px solid rgb(207, 201, 201);
+}
+header .header-top #header-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 11vh;
+}
+header .header-top #header-top .heading {
+  display: flex;
+  justify-content: start;
+}
+header .header-top #header-top .heading h5 {
+  width: 70%;
+  font-size: medium;
+}
+header .header-top #header-top .tel-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+header .header-top #header-top .tel-icon i {
+  background-color: #f7204b;
+  padding: 27px;
+  color: #fff;
+  font-size: larger;
+}
+header .header-bottom #ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  height: 8vh;
+  margin: auto 0;
+}
+header .header-bottom #ul li #a-tag {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 1s;
+}
+header .header-bottom #ul li #a-tag:hover {
+  color: #f7204b;
+}
+header .header-bottom #ul li #dropdownMenuButton1 {
+  color: black;
+  font-weight: 500;
+  transition: 1s;
+}
+header .header-bottom #ul li #dropdownMenuButton1:hover {
+  color: #f7204b;
+}
+
+#hero-banner {
+  margin-top: 20vh;
+  height: 80vh;
+  background-image: url("../image/hero-banner.jpg");
+  background-size: cover;
+}
+#hero-banner .hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#hero-banner .hero-text #hero-text {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-bottom: 80px;
+}
+#hero-banner .hero-text #hero-text h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 67px;
+}
+#hero-banner .hero-text #hero-text p {
+  font-size: 20px;
+}
+
+#dinamc-cards {
+  margin: 3vh auto;
+  background-image: url("../image/desktop-wallpaper-gradient-white-pink-linear-ffffff-ffc0cb-225a°-thumbnail.jpg");
+  background-size: cover;
+}
+#dinamc-cards .card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#dinamc-cards .card-text h2 {
+  font-size: 46px;
+}
+#dinamc-cards .card-text p {
+  color: gray;
+}
+#dinamc-cards #cards {
+  padding: 30px;
+  display: flex;
+  row-gap: 30px;
+}
+#dinamc-cards #cards .dinamc-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17px 0;
+}
+#dinamc-cards #cards .dinamc-card span {
+  font-weight: bold;
+  font-size: 20px;
+}
+#dinamc-cards #cards .dinamc-card img {
+  width: 80px;
+}
+#dinamc-cards #cards .dinamc-card .dinamc-parag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dinamc-cards #cards .dinamc-card .dinamc-parag p {
+  width: 70%;
+  color: grey;
+}
+#dinamc-cards #cards .dinamc-card #button {
+  color: red;
+}
+#dinamc-cards #cards .dinamc-card #button:hover {
+  background-color: red;
+  color: #fff;
+}
+#dinamc-cards #cards .dinamc-card #icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 17px;
+  font-size: 20px;
+  height: 10vh;
+}
+#dinamc-cards #cards .dinamc-card #icon #edit {
+  color: rgb(107, 173, 8);
+}
+#dinamc-cards #cards .dinamc-card #icon #delete {
+  color: red;
+}
+#dinamc-cards #cards .dinamc-card #icon #basket {
+  color: rgb(218, 218, 28);
+  margin-bottom: 20vh;
+}
+
+#top-courses .courses-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#top-courses .courses-text h2 {
+  font-size: 38px;
+}
+#top-courses .courses-text p {
+  color: gray;
+}
+#top-courses .topcourse-cards .topcourse-card {
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  max-width: 360px;
+}
+#top-courses .topcourse-cards .topcourse-card img {
+  overflow: hidden;
+  width: 100%;
+  transition: 3s;
+}
+#top-courses .topcourse-cards .topcourse-card img:hover {
+  transform: scale(1.3);
+}
+#top-courses .topcourse-cards .topcourse-card p {
+  position: absolute;
+  bottom: 10px;
+  left: 28px;
+  padding: 8px 0;
+  background-color: #f7204b;
+  width: 44%;
+  text-align: center;
+  color: #fff;
+}
+#top-courses .topcourse-cards .topcourse-text {
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#top-courses .topcourse-cards .topcourse-text h3 {
+  font-size: 20px;
+}
+#top-courses .topcourse-cards .topcourse-text p {
+  color: #f7204b;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#huge-trans {
+  background-image: url("../image/callto-bg.jpg");
+  background-size: cover;
+}
+#huge-trans .huge-trans {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#huge-trans .huge-trans h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+#huge-trans .huge-trans .huge-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#huge-trans .huge-trans .huge-text p {
+  width: 54%;
+}
+#huge-trans .huge-trans button {
+  border: 2px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: #f7204b;
+  font-size: 15px;
+}
+#huge-trans .huge-trans button:hover {
+  transition: 1s;
+  border-color: #fff;
+  background-color: transparent;
+}
+
+#basket {
+  margin-top: 20vh;
+}
+#basket h1 {
+  text-align: center;
+  color: orangered;
+}
+#basket .basket {
+  margin-top: 5vh;
+}
+#basket .basket .dinamc-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17px 0;
+}
+#basket .basket .dinamc-card span {
+  font-weight: bold;
+  font-size: 20px;
+}
+#basket .basket .dinamc-card img {
+  width: 80px;
+}
+#basket .basket .dinamc-card .dinamc-parag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#basket .basket .dinamc-card .dinamc-parag p {
+  width: 70%;
+  color: grey;
+}
+#basket .basket .dinamc-card button {
+  color: red;
+}
+#basket .basket .dinamc-card button:hover {
+  background-color: red;
+  color: #fff;
+}
+#basket .basket .dinamc-card #icon {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  font-size: 20px;
+}
+#basket .basket .dinamc-card #icon #delete {
+  color: red;
+}
+
+#details {
+  margin-top: 20vh;
+}
+#details h1 {
+  text-align: center;
+  color: red;
+}
+#details .details {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#details .details .dinamc-card {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17px 0;
+}
+#details .details .dinamc-card span {
+  font-weight: bold;
+  font-size: 20px;
+}
+#details .details .dinamc-card img {
+  width: 80px;
+}
+#details .details .dinamc-card .dinamc-parag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#details .details .dinamc-card .dinamc-parag p {
+  width: 90%;
+  color: grey;
+}
+
+#add-edit {
+  margin-top: 20vh;
+}
+#add-edit h1 {
+  text-align: center;
+  color: rgb(121, 193, 13);
+}
+
+footer {
+  margin-top: 20vh;
+  height: 11vh;
+}
+footer #footer #footer-text p {
+  color: gray;
+}
+footer #footer #footer-text p span {
+  color: #f7204b;
+}
+footer #footer #icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+footer #footer #icon i {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+}
+footer #footer #icon i:hover {
+  transition: 0.7s;
+  background-color: #f7204b;
+}
+
+/*# sourceMappingURL=main.css.map */

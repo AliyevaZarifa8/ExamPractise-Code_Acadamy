@@ -93,5 +93,6 @@ async function addBasket(id) {
 
 showMore.addEventListener("click", function () {
   maxLength+=3;
+  filteredData=getallData.slice(0,maxLength)
   drawCard();
 });

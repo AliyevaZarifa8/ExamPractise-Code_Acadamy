@@ -1,0 +1,42 @@
+#huge-trans {
+  background-image: url("../image/callto-bg.jpg");
+  background-size: cover;
+
+  .huge-trans {
+    height: 60vh;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .huge-text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        width: 54%;
+      }
+    }
+    button {
+      border: 2px solid transparent;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 8px 30px;
+      border-radius: 20px;
+      background-color: #f7204b;
+      font-size: 15px;
+      &:hover {
+          transition: 1s;
+        border-color: #fff;
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+#dinamc-cards {
+  margin: 3vh auto;
+  background-image: url("../image/desktop-wallpaper-gradient-white-pink-linear-ffffff-ffc0cb-225a°-thumbnail.jpg");
+  background-size: cover;
+
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 46px;
+    }
+    p {
+      color: gray;
+    }
+  }
+
+  #cards {
+    padding: 30px;
+    display: flex;
+    row-gap: 30px;
+    .dinamc-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 17px 0;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      img {
+        width: 80px;
+      }
+      .dinamc-parag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 70%;
+          color: grey;
+        }
+      }
+      #button {
+        color: red;
+        &:hover {
+          background-color: red;
+          color: #fff;
+        }
+      }
+      #icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 17px;
+        font-size: 20px;
+        height: 10vh;
+        #edit {
+          color: rgb(107, 173, 8);
+        }
+        #delete {
+          color: red;
+        }
+        #basket {
+          color: rgb(218, 218, 28);
+          margin-bottom: 20vh;
+        }
+      }
+    }
+  }
+}

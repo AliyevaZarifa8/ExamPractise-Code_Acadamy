@@ -1,0 +1,31 @@
+footer {
+  margin-top: 20vh;
+  height: 11vh;
+
+  #footer {
+    #footer-text {
+      p {
+        color: gray;
+        span {
+          color: #f7204b;
+        }
+      }
+    }
+    #icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+
+      i {
+        background-color: #000;
+        color: #fff;
+        padding: 12px;
+        &:hover {
+           transition: .7s;
+          background-color: #f7204b;
+        }
+      }
+    }
+  }
+}
