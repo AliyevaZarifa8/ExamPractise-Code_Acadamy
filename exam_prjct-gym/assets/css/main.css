@@ -7,6 +7,60 @@
   list-style: none;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  body #nav .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.6);
+    height: 16vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body #nav .nav i {
+    font-size: 27px;
+    color: red;
+  }
+  body #nav .menu-list {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.9);
+    height: 80vh;
+    width: 40%;
+    padding-top: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body #nav .menu-list #ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 8vh;
+  }
+  body #nav .menu-list #ul li #a-tag {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 1s;
+  }
+  body #nav .menu-list #ul li #a-tag:hover {
+    color: #f7204b;
+  }
+  body #nav .menu-list #ul li #dropdownMenuButton1 {
+    color: #fff;
+    font-weight: 500;
+    transition: 1s;
+  }
+  body #nav .menu-list #ul li #dropdownMenuButton1:hover {
+    color: #f7204b;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -68,10 +122,27 @@ header .header-bottom #ul li #dropdownMenuButton1 {
 header .header-bottom #ul li #dropdownMenuButton1:hover {
   color: #f7204b;
 }
+@media only screen and (max-width: 992px) {
+  header .header-top #header-top {
+    flex-direction: column;
+    height: 27vh;
+    text-align: center;
+  }
+  header .header-top #header-top .heading h5 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .header-top #header-top {
+    display: none;
+  }
+  header .header-bottom {
+    display: none;
+  }
+}
 
 #hero-banner {
-  margin-top: 20vh;
-  height: 80vh;
+  margin-top: 16vh;
   background-image: url("../image/hero-banner.jpg");
   background-size: cover;
 }
@@ -95,9 +166,19 @@ header .header-bottom #ul li #dropdownMenuButton1:hover {
 #hero-banner .hero-text #hero-text p {
   font-size: 20px;
 }
+@media only screen and (max-width: 992px) {
+  #hero-banner .hero-text #hero-text h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+  }
+  #hero-banner .hero-text #hero-text p {
+    font-size: 16px;
+  }
+}
 
 #dinamc-cards {
-  margin: 3vh auto;
+  margin: 1vh auto;
   background-image: url("../image/desktop-wallpaper-gradient-white-pink-linear-ffffff-ffc0cb-225a°-thumbnail.jpg");
   background-size: cover;
 }
@@ -166,6 +247,16 @@ header .header-bottom #ul li #dropdownMenuButton1:hover {
   color: rgb(218, 218, 28);
   margin-bottom: 20vh;
 }
+@media only screen and (max-width: 992px) {
+  #dinamc-cards .card-text h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #dinamc-cards input {
+    width: 100%;
+  }
+}
 
 #top-courses .courses-text {
   display: flex;
@@ -219,6 +310,32 @@ header .header-bottom #ul li #dropdownMenuButton1:hover {
   font-size: 20px;
   margin-right: 5px;
 }
+@media only screen and (max-width: 992px) {
+  #top-courses .courses-text h2 {
+    font-size: 23px;
+  }
+  #top-courses .topcourse-cards .topcourse-card {
+    height: 26vh;
+    overflow: hidden;
+    position: relative;
+    max-width: 340px;
+  }
+  #top-courses .topcourse-cards .topcourse-card p {
+    bottom: 2px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #top-courses .courses-text h2 {
+    font-size: 23px;
+  }
+  #top-courses .topcourse-cards .topcourse-card {
+    height: 39vh;
+    max-width: 480px;
+  }
+  #top-courses .topcourse-cards .topcourse-card p {
+    bottom: 19px;
+  }
+}
 
 #huge-trans {
   background-image: url("../image/callto-bg.jpg");
@@ -260,6 +377,34 @@ header .header-bottom #ul li #dropdownMenuButton1:hover {
   transition: 1s;
   border-color: #fff;
   background-color: transparent;
+}
+@media only screen and (max-width: 992px) {
+  #huge-trans .huge-trans {
+    height: 38vh;
+  }
+  #huge-trans .huge-trans h2 {
+    font-size: 30px;
+  }
+  #huge-trans .huge-trans .huge-text p {
+    width: 40%;
+  }
+  #huge-trans .huge-trans button {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #huge-trans .huge-trans {
+    height: 40vh;
+  }
+  #huge-trans .huge-trans h2 {
+    font-size: 26px;
+  }
+  #huge-trans .huge-trans .huge-text p {
+    width: 40%;
+  }
+  #huge-trans .huge-trans button {
+    font-size: 12px;
+  }
 }
 
 #basket {
@@ -382,6 +527,28 @@ footer #footer #icon i {
 footer #footer #icon i:hover {
   transition: 0.7s;
   background-color: #f7204b;
+}
+@media only screen and (max-width: 992px) {
+  footer #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer #footer #footer-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  footer #footer #icon {
+    column-gap: 47px;
+  }
+  footer #footer #icon i {
+    padding: 12px;
+    margin: auto 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

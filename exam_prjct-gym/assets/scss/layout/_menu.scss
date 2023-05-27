@@ -1,0 +1,58 @@
+body {
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    #nav {
+      .nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+        background: rgba($color: #000000, $alpha: 0.6);
+        height: 16vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        i {
+          font-size: 27px;
+          color: red;
+        }
+      }
+      .menu-list {
+        z-index: 100;
+        background: rgba($color: #000000, $alpha: 0.9);
+        height: 80vh;
+        width: 40%;
+        padding-top: 20vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        #ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 30px;
+          height: 8vh;
+
+          li {
+            #a-tag {
+              text-decoration: none;
+              color: #fff;
+              font-weight: 500;
+              transition: 1s;
+              &:hover {
+                color: #f7204b;
+              }
+            }
+            #dropdownMenuButton1 {
+              color: #fff;
+              font-weight: 500;
+              transition: 1s;
+              &:hover {
+                color: #f7204b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

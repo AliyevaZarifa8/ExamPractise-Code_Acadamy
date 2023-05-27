@@ -4,6 +4,9 @@ let searchInp = document.querySelector("#search");
 let sortBtn = document.querySelector("#sort");
 let crudCard = document.querySelector("#cards");
 let showMore = document.querySelector("#showMore");
+let menuList = document.querySelector(".menu-list");
+let menuIcon = document.querySelector("#menu");
+let deleteIcon = document.querySelector("#delete");
 let getallData = [];
 let filteredData = [];
 let sortedData = [];
@@ -22,7 +25,7 @@ async function drawCard() {
 
   filteredData.forEach((element) => {
     crudCard.innerHTML += `
-        <div class="col-4">
+        <div class="col-lg-4  col-md-12">
         <div class="card dinamc-card">
           <img src="${element.photo}" alt="" />
           <h3>${element.title}</h3>
@@ -63,7 +66,6 @@ showMore.addEventListener("click", function () {
   maxLength += 3;
   filteredData = getallData.slice(0, maxLength);
   drawCard();
- 
 });
 
 searchInp.addEventListener("input", function (e) {
@@ -73,7 +75,7 @@ searchInp.addEventListener("input", function (e) {
       .includes(e.target.value.toLocaleLowerCase());
   });
   drawCard();
-  getallData=filteredData
+  getallData = filteredData;
 });
 
 sortBtn.addEventListener("click", function () {
@@ -91,9 +93,22 @@ sortBtn.addEventListener("click", function () {
 
     drawCard();
   } else {
-    filteredData=getallData
+    filteredData = getallData;
     sortBtn.innerHTML = "Sort By";
     sort = "asc";
     drawCard();
   }
+});
+
+menuList.style.display = "none";
+deleteIcon.style.display = "none";
+menuIcon.addEventListener("click", function () {
+  menuList.style.display = "block";
+  deleteIcon.style.display = "block";
+  menuIcon.style.display = "none";
+});
+deleteIcon.addEventListener("click", function () {
+  menuList.style.display = "none";
+  deleteIcon.style.display = "none";
+  menuIcon.style.display = "block";
 });

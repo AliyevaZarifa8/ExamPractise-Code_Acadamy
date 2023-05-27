@@ -1,5 +1,5 @@
 #dinamc-cards {
-  margin: 3vh auto;
+  margin: 1vh auto;
   background-image: url("../image/desktop-wallpaper-gradient-white-pink-linear-ffffff-ffc0cb-225a°-thumbnail.jpg");
   background-size: cover;
 
@@ -69,6 +69,19 @@
           margin-bottom: 20vh;
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .card-text {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    input {
+      width: 100%;
     }
   }
 }

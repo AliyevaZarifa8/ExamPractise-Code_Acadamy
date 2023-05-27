@@ -56,4 +56,42 @@
       }
     }
   }
+
+  @media only screen and (max-width: 992px) {
+    .courses-text {
+      h2 {
+        font-size: 23px;
+      }
+    }
+    .topcourse-cards {
+      .topcourse-card {
+        height: 26vh;
+        overflow: hidden;
+        position: relative;
+        max-width: 340px;
+
+        p {
+          bottom: 2px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .courses-text {
+      h2 {
+        font-size: 23px;
+      }
+    }
+    .topcourse-cards {
+      .topcourse-card {
+        height: 39vh;
+
+        max-width: 480px;
+
+        p {
+          bottom: 19px;
+        }
+      }
+    }
+  }
 }

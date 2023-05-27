@@ -33,9 +33,42 @@
       background-color: #f7204b;
       font-size: 15px;
       &:hover {
-          transition: 1s;
+        transition: 1s;
         border-color: #fff;
         background-color: transparent;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .huge-trans {
+      height: 38vh;
+      h2 {
+        font-size: 30px;
+      }
+      .huge-text {
+        p {
+          width: 40%;
+        }
+      }
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .huge-trans {
+      height: 40vh;
+      h2 {
+        font-size: 26px;
+      }
+      .huge-text {
+        p {
+          width: 40%;
+        }
+      }
+      button {
+        font-size: 12px;
       }
     }
   }

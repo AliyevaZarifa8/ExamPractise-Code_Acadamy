@@ -22,8 +22,32 @@ footer {
         color: #fff;
         padding: 12px;
         &:hover {
-           transition: .7s;
+          transition: 0.7s;
           background-color: #f7204b;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #footer-text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+      }
+      #icon {
+        column-gap: 47px;
+
+        i {
+          padding: 12px;
+          margin: auto 0;
         }
       }
     }

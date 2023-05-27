@@ -64,4 +64,30 @@ header {
       }
     }
   }
+
+  @media only screen and (max-width: 992px) {
+    .header-top {
+      #header-top {
+        flex-direction: column;
+        height: 27vh;
+        text-align: center;
+        .heading {
+          h5 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header-top {
+      #header-top {
+        display: none;
+      }
+    }
+    .header-bottom {
+      display: none;
+    }
+  }
 }
