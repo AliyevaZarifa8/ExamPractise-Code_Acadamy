@@ -22,11 +22,11 @@
       "text": "Who are in extremely love with eco friendly"
     },
     {
-      "id": 4,
-      "photo": "./assets/image/o1.png",
+      "photo": "./assets/image/undefined",
       "title": "The Upper Eye",
-      "price": 549,
-      "text": "Who are in extremely love with eco friendly"
+      "price": "199",
+      "text": "Who are in extremely love with eco friendly",
+      "id": 4
     },
     {
       "photo": "./assets/image/logo (2).png",
@@ -83,6 +83,41 @@
       "price": "897",
       "text": "Sequi aliquip aut ut",
       "id": 12
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Eum sapiente accusam",
+      "price": "518",
+      "text": "Quos proident nobis",
+      "id": 13
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Laborum Cum amet p",
+      "price": "550",
+      "text": "Sint non molestiae f",
+      "id": 14
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Explicabo Iusto num",
+      "price": "540",
+      "text": "Nihil veniam quis m",
+      "id": 15
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Labore aperiam molli",
+      "price": "490",
+      "text": "Consectetur error iu",
+      "id": 16
+    },
+    {
+      "photo": "./assets/image/undefined",
+      "title": "Quo quo consequatur ",
+      "price": "357",
+      "text": "Qui et aperiam magna",
+      "id": 17
     }
   ],
   "basket": [

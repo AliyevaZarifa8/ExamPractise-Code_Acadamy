@@ -10,6 +10,7 @@ let deleteIcon = document.querySelector("#delete");
 let getallData = [];
 let filteredData = [];
 let sortedData = [];
+let evrData = [];
 let maxLength = 3;
 let sort = "asc";
 
@@ -23,6 +24,7 @@ async function drawCard() {
       ? filteredData.slice(0, maxLength)
       : getallData.slice(0, maxLength);
 
+  console.log(filteredData);
   filteredData.forEach((element) => {
     crudCard.innerHTML += `
         <div class="col-lg-4  col-md-12">
@@ -62,12 +64,6 @@ async function addfavCard(id) {
   await axios.post(basketUrl, obj);
 }
 
-showMore.addEventListener("click", function () {
-  maxLength += 3;
-  filteredData = getallData.slice(0, maxLength);
-  drawCard();
-});
-
 searchInp.addEventListener("input", function (e) {
   filteredData = getallData.filter((item) => {
     return item.title
@@ -76,7 +72,22 @@ searchInp.addEventListener("input", function (e) {
   });
   drawCard();
   getallData = filteredData;
+  evrData = filteredData;
 });
+
+
+
+
+showMore.addEventListener("click", function () {
+  getallData.length > maxLength + 2
+    ? (maxLength += 3)
+    : (maxLength = maxLength - (maxLength - getallData.length));
+  console.log(filteredData);
+  filteredData = getallData.slice(0, maxLength);
+
+  drawCard();
+});
+
 
 sortBtn.addEventListener("click", function () {
   sortedData = filteredData;
@@ -93,7 +104,7 @@ sortBtn.addEventListener("click", function () {
 
     drawCard();
   } else {
-    filteredData = getallData;
+    filteredData = searchInp.value ? evrData : getallData;
     sortBtn.innerHTML = "Sort By";
     sort = "asc";
     drawCard();
