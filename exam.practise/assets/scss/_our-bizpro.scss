@@ -1,0 +1,76 @@
+#our-bizpro {
+  margin-top: 40px;
+  #bizpro-text {
+    text-align: center;
+    display: flex;
+    row-gap: 10px;
+    h1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 3%;
+        height: 3px;
+        background-color: red;
+        left: 48%;
+        bottom: -30%;
+      }
+    }
+    .parag {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        width: 60%;
+      }
+    }
+  }
+
+  #cards {
+    .img-text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        border: 2px solid red;
+        border-radius: 50%;
+        padding: 29px;
+        &:hover {
+          background-color: rgb(221, 40, 40);
+        }
+      }
+      h4:hover {
+        color: red;
+      }
+      .parag {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          width: 100%;
+          color: gray;
+        }
+      }
+      #parag {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      #more-details {
+        padding: 10px 16px;
+        border: none;
+        border: 1px solid red;
+        color: rgb(41, 38, 38);
+        background-color: #fff;
+        text-decoration: none;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}

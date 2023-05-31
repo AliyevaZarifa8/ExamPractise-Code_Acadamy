@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./asserts/scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="./asserts/image/logo (1).png" alt="" />
+          <ul id="ul">
+            <li><a href="">Home</a></li>
+            <li><a href="">About As</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="./add-edit.html">Add Robot</a></li>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn text-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./basket.html">Basket</a></li>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn text-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero-banner">
+      <div class="container">
+        <div class="row" id="hero-img-text">
+          <div class="col-6 hero-banner">
+            <h1>Improved Production level with Robotics</h1>
+            <p>EVERYONE WANTS THE INNOVATION THROUGH ROBOTICS</p>
+            <div><button>View Details</button></div>
+          </div>
+          <div class="col-6">
+            <img src="./asserts/image/banner-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rodortic">
+      <div class="robort-text">
+        <h1>Featured Robotics Products to Show</h1>
+        <p>Who are in extremely love with eco friendly system.</p>
+      </div>
+
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-8">
+            <input
+              type="text"
+              placeholder="Search by name..."
+              size="80"
+              class="p-2"
+              id="search"
+            />
+          </div>
+          <div class="col-2 offset-2">
+            <button class="btn btn-primary py-2 px-4" id="sort">Sort by</button>
+          </div>
+        </div>
+      </div>
+      <div id="dinamic-robort">
+        <div class="container">
+          <div class="row" id="cards">
+            <!-- <div class="col-3" id="card">
+            <img src="./asserts/image/p2.png" alt="" />
+            <h4>The Upper Eye</h4>
+            <div>
+              <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div>
+              <button id="details">VIEW DETAILS</button>
+            </div>
+            <div class="button">
+              <button class="btn btn-danger">Delete</button>
+              <a href="" class="btn btn-success">Edit</a>
+              <button class="btn btn-primary">Basket</button>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./asserts/js/script.js"></script>
+  </body>
+</html>

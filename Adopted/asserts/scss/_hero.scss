@@ -1,0 +1,25 @@
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  img {
+    width: 69%;
+  }
+  .parag {
+    width: 100%;
+    p {
+      width: 70%;
+    }
+  }
+  #button {
+    border: 2px solid red;
+    color: red;
+    border-radius: 7px;
+    padding: 11px 22px;
+    background-color: transparent;
+    &:hover {
+      color: #fff;
+      background-color: rgb(212, 59, 59);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 29px;
+      height: 13vh;
+      margin: auto 0;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          text-transform: uppercase;
+          &:hover {
+            color: cornflowerblue;
+          }
+        }
+        .sigin {
+          color: cornflowerblue;
+        }
+      }
+    }
+  }
+}

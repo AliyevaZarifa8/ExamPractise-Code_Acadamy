@@ -1,0 +1,29 @@
+#tranings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 58, 227);
+  row-gap: 14px;
+  padding: 29px;
+  h1 {
+    color: #fff;
+  }
+  .traning {
+    display: flex;
+    color: #fff;
+    column-gap: 19px;
+    .traningcours {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+      &:hover {
+        color: red;
+      }
+    }
+   
+  }
+}

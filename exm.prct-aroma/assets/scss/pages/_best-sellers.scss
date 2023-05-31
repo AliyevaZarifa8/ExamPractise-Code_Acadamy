@@ -1,0 +1,74 @@
+#best-sellers {
+  #best-text {
+    margin: 8vh auto;
+    p {
+      color: grey;
+    }
+    h2 {
+      position: relative;
+      font-weight: 700;
+      font-size: 30px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        background-color: blue;
+        width: 23%;
+        bottom: -20%;
+        left: 18%;
+      }
+    }
+  }
+
+  .carousel-item {
+    height: 80vh;
+    background-color: transparent;
+
+    #dinamc-card {
+      display: flex;
+      text-align: center;
+      border: none;
+      color: #000;
+      row-gap: 7px;
+      position: relative;
+      transition: all 2s;
+    
+      &:hover {
+        .card-hover {
+          display: flex;
+        }
+        h4 {
+          color: blue;
+        }
+      }
+      .card-hover {
+        background-color: white;
+        opacity: 0.8;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        position: absolute;
+        top: 23vh;
+        width: 100%;
+        height: 27%;
+        i {
+          cursor: pointer;
+          background-color: rgb(70, 123, 236);
+          color: #fff;
+          padding: 14px;
+          opacity: 0.8;
+        }
+      }
+      p {
+        color: grey;
+      }
+
+      span {
+        color: grey;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}

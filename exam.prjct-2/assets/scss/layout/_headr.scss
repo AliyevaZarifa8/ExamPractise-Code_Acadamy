@@ -1,0 +1,40 @@
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    #ul {
+      display: flex;
+      column-gap: 40px;
+      margin: auto 0;
+      align-items: center;
+
+      li {
+        .a-tag {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          &:hover {
+            color: rgb(61, 61, 223);
+          }
+        }
+        #dropdownMenuButton1,
+        #dropdownMenuButton2 {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          &:hover {
+            color: rgb(61, 61, 223);
+          }
+        }
+      }
+    }
+  }
+}

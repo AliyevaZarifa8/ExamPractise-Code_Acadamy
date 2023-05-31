@@ -1,0 +1,65 @@
+#hero {
+  height: 120vh;
+  padding: 70px;
+  h5 {
+    text-align: center;
+    position: relative;
+    color: rgb(107, 103, 103);
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 40px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10%;
+      height: 3px;
+      background-color: rgb(65, 63, 63);
+      left: 45%;
+      bottom: -23%;
+    }
+  }
+  .hero-parags {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p {
+      color: rgb(119, 108, 108);
+      text-align: center;
+      width: 40%;
+      font-size: larger;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    .img-text {
+      text-align: center;
+      height: 30vh;
+      margin-bottom: 50px;
+      img {
+        width: 110px;
+      }
+      h3 {
+        color: rgb(77, 69, 69);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .prg {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        p {
+          width: 85%;
+          font-size: larger;
+        }
+      }
+    }
+  }
+}

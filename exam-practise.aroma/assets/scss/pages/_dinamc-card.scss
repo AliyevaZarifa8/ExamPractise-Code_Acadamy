@@ -1,0 +1,84 @@
+#dinamc-cards {
+  margin-top: 14vh;
+  #card-text {
+    p {
+      color: grey;
+    }
+    h2 {
+      position: relative;
+      font-weight: 700;
+      font-size: 38px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        background-color: blue;
+        width: 34%;
+        bottom: -20%;
+        left: 41%;
+      }
+    }
+  }
+  #cards-dinamc {
+    #dinamc-card {
+      display: flex;
+      text-align: center;
+      border: none;
+      color: #000;
+      row-gap: 7px;
+      position: relative;
+      transition: all 2s;
+
+      &:hover {
+        .card-hover {
+          display: flex;
+        }
+        h4 {
+          color: blue;
+        }
+      }
+      .card-hover {
+        background-color: #fff;
+        
+        display: none;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        position: absolute;
+        top: 29vh;
+        width: 100%;
+        height: 26%;
+        i {
+          background-color: rgb(70, 123, 236);
+          color: #fff;
+          padding: 14px;
+          &:hover {
+            background-color: rgb(10, 42, 110);
+            color: #fff;
+          }
+        }
+      }
+      p {
+        color: grey;
+      }
+
+      span {
+        color: grey;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #card-text {
+      h2 {
+        &::after {
+          width: 28%;
+          bottom: -20%;
+          left: 33%;
+        }
+      }
+    }
+  }
+}

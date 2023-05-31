@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #05274b;
+  color: #fff;
+  padding-top: 13px;
+  height: 14vh;
+  margin-top: 15vh;
+  p {
+    i,
+    span {
+      color: blue;
+    }
+  }
+}

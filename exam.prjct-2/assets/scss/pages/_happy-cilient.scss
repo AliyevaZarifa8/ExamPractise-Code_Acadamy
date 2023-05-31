@@ -1,0 +1,51 @@
+#happy-client {
+  background-color: rgb(125, 185, 232);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  h1 {
+    text-align: center;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 16%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -20%;
+      left: 40%;
+    }
+  }
+  #parag-happy {
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+
+      width: 60%;
+    }
+  }
+
+  #happy-card {
+    display: flex;
+    column-gap: 10px;
+    #icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        border: 7px solid #b5d2e8;
+        border-radius: 50%;
+        font-size: 40px;
+        padding: 20px;
+        background-color: #fff;
+        color: #7ba3c2;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+#hero-section {
+  margin-top: 13vh;
+  background-image: url("../Image/bg1.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 160px;
+  row-gap: 50px;
+
+  .special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .special-offer {
+      width: 40%;
+      padding: 10px;
+      background-color: orangered;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+
+  .text-image {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .text {
+      h2 {
+        font-size: 50px;
+      }
+      h5 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
+
+      .check {
+        margin-top: 40px;
+        display: flex;
+        column-gap: 50px;
+        .check-tamquam {
+          .tamquam {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+          }
+        }
+      }
+      .button {
+        margin-top: 40px;
+        background-color: orangered;
+        width: 20%;
+      }
+    }
+  }
+}

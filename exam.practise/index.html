@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizPara</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <nav>
+          <img src="./assets/image/logo.png" alt="" />
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portgolio</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Skill</a></li>
+            <li><a href="">Clients</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="./add-edit.html">Add Card</a></li>
+            <li><a href="./basket.html">Basket</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero-banner">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/image/slide-1.jpg"
+              class="d-block w-100 vh-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="col col-6 offset-3 hero-text">
+                <h1>Hello we're bizoro</h1>
+                <h3>Soub head motto or mission subtitle.</h3>
+                <button>See our projects</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/image/slide-2.jpg"
+              class="d-block w-100 vh-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="col col-6 offset-3 hero-text">
+                <h1>Hello we're bizoro</h1>
+                <h3>Soub head motto or mission subtitle.</h3>
+                <button>See our projects</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/image/slide-3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="col col-6 offset-3 hero-text" id="">
+                <h1>Hello we're bizoro</h1>
+                <h3>Soub head motto or mission subtitle.</h3>
+                <button>See our projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="our-bizpro">
+      <div class="container">
+        <div class="row" id="bizpro-text">
+          <h1>ABOUT OUR BIZPRO</h1>
+          <div class="parag">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type.
+            </p>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-8">
+            <input
+              type="text"
+              placeholder="Search by name..."
+              size="80"
+              class="p-2"
+              id="search"
+            />
+          </div>
+          <div class="col-2 offset-2">
+            <button class="btn btn-primary py-2 px-4" id="sort">Sort by</button>
+          </div>
+        </div>
+
+        <div class="row" id="cards">
+          <!-- <div class="col col-3 img-text p-2" id="card">
+            <img src="./assets/image/pen.jpg" alt="" width="100px" />
+            <h4>WEB DEVELOPMENT</h4>
+            <div class="parag">
+              <p>
+                WEB DEVELOPMENT Lorem ipsum dolor sit amet, consect et
+                adipiscing elit, tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+            <p id="parag">2345</p>
+            <button id="more-details" class="mb-4">More Details</button>
+            <div class="button">
+              <button class="btn btn-danger">Delete</button>
+              <a href="" class="btn btn-success">Edit</a>
+              <button class="btn btn-primary">Add Basket</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="awosome">
+      <div class="container">
+            <div class="row" id="awosome-text">
+              <h1>ABOUT OUR BIZPRO</h1>
+              <div class="parag">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type.
+                </p>
+              </div>
+            </div>
+       
+        <div class="awosome-list">
+          <ul>
+            <li><a href="">All</a></li>
+            <li><a href="">Web Design</a></li>
+            <li><a href="">Photography</a></li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">Online Marketing</a></li>
+            <li><a href="">Digital Media</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </div>
+
+
+        <div class="image">
+          <div class=" col-4">
+            <img src="./assets/image/1.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/2.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/3.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/4.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/5.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/6.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/7.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/8.jpg" alt="">
+          </div>
+          <div class=" col-4">
+            <img src="./assets/image/9.jpg" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="meet-team">
+      <div class="row" id="team-text">
+        <h1>MEET OUR TEAM</h1>
+        <div class="parag">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             when an unknown printer took a galley of type.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row img-texts">
+          <div class="col-4 img-text">
+          <img src="./assets/image/1 (1).jpg" alt="">
+          <div class="text">
+            <h4>Goncalez Gina</h4>
+            <p>Web Deoloper</p>
+           </div>
+          </div>
+          <div class="col-4 img-text">
+          <img src="./assets/image/2 (1).jpg" alt="">
+         <div class="text">
+          <h4>Goncalez Gina</h4>
+          <p>Web Deoloper</p>
+         </div>
+          </div>
+          <div class="col-4 img-text">
+          <img src="./assets/image/3 (1).jpg " alt="">
+          <div class="text">
+            <h4>Goncalez Gina</h4>
+            <p>Web Deoloper</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-blog">
+      <div class="container">
+        <div class="row" id="blog-text">
+          <h1>OUR LATEST BLOG</h1>
+          <div class="parag">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+               when an unknown printer took a galley of type.
+            </p>
+          </div>
+        </div>
+  
+  
+        <div class="row">
+         <div class="container">
+         <div class="img-blog">
+          <div class="col-4">
+            <div class="blog-img">
+              <img src="./assets/image/1 (2).jpg" alt="">
+              <h4>Playback: Akufo-Addo speaks to business community</h4>
+              <p>Posted by admin at 04 Feb, 2017</p>
+         <div class="parag">
+          <p>Posted by admin at 04 Feb, 2017
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis
+             velit in tristique. Curabitur ac urna urna sed accumsan <a>... Read More</a></p>
+         </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="blog-img">
+              <img src="./assets/image/2 (2).jpg" alt="">
+              <h4>Playback: Akufo-Addo speaks to business community</h4>
+              <p>Posted by admin at 04 Feb, 2017</p>
+              <div class="parag">
+                <p>Posted by admin at 04 Feb, 2017
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis 
+                  iaculis velit in tristique. Curabitur ac urna urna sed accumsa <a>...Read More</a></p>
+               </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="blog-img">
+              <img src="./assets/image/3 (2).jpg" alt="">
+              <h4>Playback: Akufo-Addo speaks to business community</h4>
+              <p>Posted by admin at 04 Feb, 2017</p>
+              <div class="parag">
+                <p>Posted by admin at 04 Feb, 2017
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis 
+                  iaculis velit in tristique. Curabitur ac urna urna sed accumsan<a>...Read More</a></p>
+               </div>
+            </div>
+          </div>
+         </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div id="footer">
+        <p>Copyright @2018 All rights reserved | This template is made with  by Colorlib</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

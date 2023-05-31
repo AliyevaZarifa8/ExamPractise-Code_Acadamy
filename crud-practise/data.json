@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Gultakin",
+      "surName": "Mammadova",
+      "email": "gultakin@gmail.com",
+      "cardnum": " 4376690980923456"
+    },
+    {
+      "id": 1,
+      "firstName": "Nijat",
+      "surName": "Carqalayev",
+      "email": "nijat@gmail.com",
+      "cardnum": " 4376690980923456"
+    },
+    {
+      "id": 2,
+      "firstName": "Zarifa",
+      "surName": "Alieffa",
+      "email": "zarif@gmail.com",
+      "cardnum": " 4376690980923456"
+    },
+    {
+      "id": 3,
+      "firstName": "Leyla",
+      "surName": "Alieffa",
+      "email": "leylla@gmail.com",
+      "cardnum": " 4376690980923456"
+    },
+    {
+      "firstName": "wdearhtswesrgts",
+      "surName": "wresef",
+      "email": "rgesbsa",
+      "cardnum": "3333333",
+      "id": 4
+    }
+  ]
+}

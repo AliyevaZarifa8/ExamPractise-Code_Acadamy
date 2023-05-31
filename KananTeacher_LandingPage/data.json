@@ -1,0 +1,14 @@
+{
+    "users":[
+    {
+        "name":"Zarifa",
+        "surname":"Alieffa",
+        "email":"zarifa@gmail.com",
+        "password":"zarifinci23",
+        "check":"checked",
+        "select":"JavaScript",
+        "photo":"./images/logo.jpg"
+    }
+
+    ]
+}

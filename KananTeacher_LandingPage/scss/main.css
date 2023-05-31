@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: blue;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1 {
+  color: #fff;
+  font-size: 30px;
+}
+header nav ul {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  align-items: center;
+  height: 7vh;
+  margin: auto 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  border: 4px solid transparent;
+  border-radius: 9px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  border-color: aqua;
+  color: black;
+  background-color: aquamarine;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 13px;
+  height: 60vh;
+}
+.hero img {
+  border-radius: 47%;
+}
+.hero h1 {
+  font-family: "Lobster", cursive;
+}
+.hero i {
+  color: gray;
+  font-size: 17px;
+}
+.hero button {
+  padding: 8px 38px;
+  border: 2px solid transparent;
+  background-color: darkcyan;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 20px;
+}
+.hero button:hover {
+  background-color: #fff;
+  color: rgb(61, 134, 110);
+  border-color: aquamarine;
+}
+
+#tranings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 58, 227);
+  row-gap: 14px;
+  padding: 29px;
+}
+#tranings h1 {
+  color: #fff;
+}
+#tranings .traning {
+  display: flex;
+  color: #fff;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+}
+#tranings .traning .traningcours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tranings .traning .traningcours p {
+  text-align: center;
+}
+#tranings .traning .traningcours:hover {
+  color: red;
+}
+
+#courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#courses h1 {
+  text-align: center;
+  color: blue;
+}
+#courses .course {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#courses .course .phyjavajs {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#courses .course .phyjavajs .image {
+  position: relative;
+}
+#courses .course .phyjavajs .image img {
+  width: 300px;
+  height: 230px;
+  border-radius: 15px;
+}
+#courses .course .phyjavajs .image p {
+  display: inline;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  left: 4px;
+  top: 10px;
+}
+#courses .course .phyjavajs .text {
+  display: flex;
+  flex-direction: column;
+}
+#courses .course .phyjavajs .text h3 {
+  font-family: "Lobster", cursive;
+}
+#courses .course .phyjavajs .text p {
+  font-size: 21px;
+  color: gray;
+}
+#courses .course .phyjavajs .text i {
+  color: rgb(18, 141, 100);
+}
+#courses .course .phyjavajs .text button {
+  width: 150px;
+  margin-top: 10px;
+  padding: 7px 3px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+}
+#courses .course .phyjavajs .text button:hover {
+  background-color: #000;
+  color: red;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 75, 161);
+  height: 84vh;
+  margin-top: 10vh;
+}
+#contact h1 {
+  text-align: center;
+  color: #fff;
+}
+#contact label {
+  color: #fff;
+  font-size: 23px;
+}
+#contact input {
+  padding: 4px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  color: cornflowerblue;
+  font-size: 20px;
+}
+#contact input::-moz-placeholder {
+  color: cornflowerblue;
+  font-size: 19px;
+}
+#contact input:-ms-input-placeholder {
+  color: cornflowerblue;
+  font-size: 19px;
+}
+#contact input::placeholder {
+  color: cornflowerblue;
+  font-size: 19px;
+}
+#contact #check {
+  accent-color: red;
+  width: 20px;
+  height: 20px;
+}
+#contact select {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 20px;
+  outline: none;
+}
+#contact button {
+  padding: 5px 39px;
+  border: none;
+  background-color: rgb(7, 118, 174);
+  color: rgb(12, 45, 107);
+  font-weight: bold;
+  font-size: 20px;
+}
+#contact button:hover {
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */

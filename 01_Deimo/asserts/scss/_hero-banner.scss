@@ -1,0 +1,64 @@
+#hero-banner {
+  background-image: url("../image/server-banner\ \(1\).jpg");
+  background-size: cover;
+  height: 150vh;
+  margin-top: 12vh;
+  padding: 200px;
+  background-attachment: fixed;
+  .special-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 47px;
+    h2 {
+      padding: 20px 49px;
+      background-color: rgb(239, 99, 48);
+      color: #fff;
+      border-radius: 9px;
+      font-size: 47px;
+    }
+  }
+  .hero-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 39px;
+
+    h1 {
+      font-size: 63px;
+    }
+    h2 {
+      font-size: 47px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 26px;
+    }
+    .tamqua {
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 0;
+      }
+    }
+  }
+  .button {
+    margin-top: 70px;
+    button {
+      background-color: rgb(223, 98, 52);
+      padding: 17px 59px;
+      border: none;
+      color: rgb(42, 68, 117);
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

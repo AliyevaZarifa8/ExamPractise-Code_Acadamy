@@ -1,0 +1,34 @@
+{
+    "card": [
+      {
+        "id": 1,
+        "photo": "./asserts/image/p2.png",
+        "title": "The Upper Eye",
+        "price": 29,
+        "text": "Who are in extremely love with eco friendly"
+      },
+      {
+        "id": 2,
+        "photo": "./asserts/image/p2.png",
+        "title": "The Upper Eye",
+        "price": 245,
+        "text": "Who are in extremely love with eco friendly"
+      },
+      {
+        "id": 3,
+        "photo": "./asserts/image/p2.png",
+        "title": "The Upper Eye",
+        "price": 967,
+        "text": "Who are in extremely love with eco friendly"
+      },
+      {
+        "id": 4,
+        "photo": "./asserts/image/p2.png",
+        "title": "The Upper Eye",
+        "price": 549,
+        "text": "Who are in extremely love with eco friendly"
+      }
+      
+    ],
+    "basket": []
+  }

@@ -1,0 +1,57 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+
+    #ul {
+      display: flex;
+      column-gap: 38px;
+      align-items: center;
+      margin: auto 0;
+      .a-tag {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: blue;
+        }
+      }
+      #dropdownMenuLink {
+        &:hover {
+          color: blue;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .header-icon {
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+
+      i {
+        font-size: 20px;
+        color: rgb(84, 84, 205);
+      }
+      button {
+        border: 1px solid grey;
+        padding: 10px 39px;
+        border-radius: 23px;
+        font-weight: 600;
+        &:hover {
+          transition: 1s;
+          border-color: blue;
+        }
+      }
+    }
+  }
+}

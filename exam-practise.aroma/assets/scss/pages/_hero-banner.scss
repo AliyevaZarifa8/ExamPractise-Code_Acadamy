@@ -1,0 +1,53 @@
+#hero-banner {
+  margin-top: 14vh;
+  position: relative;
+  #blue-color {
+    height: 98vh;
+    background-color: blue;
+  }
+  img {
+    width: 28%;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+  }
+  #hero-text {
+    background-color: hsl(190, 27%, 96%);
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20vh;
+      margin-left: 26vh;
+      h4 {
+        color: grey;
+      }
+      h1 {
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        font-size: 60px;
+      }
+      #hero-parag {
+        width: 100%;
+        display: flex;
+        p {
+          color: gray;
+          font-size: 18px;
+        }
+      }
+
+      button {
+        background-color: rgb(48, 48, 219);
+        color: #fff;
+        border: 2px solid transparent;
+        border-radius: 25px;
+        padding: 12px 39px;
+        font-weight: 500;
+        &:hover {
+          background-color: transparent;
+          border-color: rgb(35, 35, 223);
+          color: black;
+        }
+      }
+    }
+  }
+}

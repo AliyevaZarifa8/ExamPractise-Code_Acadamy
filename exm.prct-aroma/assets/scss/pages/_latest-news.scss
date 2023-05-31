@@ -1,0 +1,64 @@
+#latest-news {
+  #latest-text {
+    margin: 8vh auto;
+    p {
+      color: grey;
+    }
+    h2 {
+      position: relative;
+      font-weight: 700;
+      font-size: 30px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        background-color: blue;
+        width: 18%;
+        bottom: -20%;
+        left: 22%;
+      }
+    }
+  }
+
+  .latest-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    margin: 20px auto;
+    column-gap: 23px;
+
+    &:hover {
+      h4 {
+        color: blue;
+      }
+      a {
+        color: blue;
+      }
+      img {
+        opacity: 0.9;
+      }
+    }
+
+    span {
+      color: gray;
+      i {
+        margin-right: 30px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      color: rgb(132, 129, 129);
+      font-size: 17px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "photo": "./assets/image/pen.jpg",
+      "title": "WEB DEVELOPMENT",
+      "price": 29,
+      "text": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "id": 2,
+      "photo": "./assets/image/pen.jpg",
+      "title": "WEB DEVELOPMENT",
+      "price": 27,
+      "text": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "photo": "./assets/image/logo.png",
+      "price": "762",
+      "text": "Inventore voluptate ",
+      "title": "Aliquid omnis id vol",
+      "id": 3
+    },
+    {
+      "photo": "./assets/image/p2.png",
+      "price": "430657877687",
+      "text": "Sit quaerat Nam id s",
+      "title": "Labore ut sed in bea",
+      "id": 4
+    },
+    {
+      "photo": "./assets/image/p2.png",
+      "price": "767",
+      "text": "Tempore facilis com",
+      "title": "Error deserunt et li",
+      "id": 5
+    }
+  ],
+  "basket": []
+}

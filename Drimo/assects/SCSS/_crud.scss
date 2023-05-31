@@ -1,0 +1,33 @@
+#crud {
+  .paragrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    row-gap: 10px;
+    h1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 40%;
+        left: 30%;
+        bottom: -30%;
+        background-color: grey;
+      }
+    }
+    p {
+      width: 40%;
+      text-align: center;
+    }
+  }
+
+  .prof-card {
+    .card {
+      padding: 20px;
+    }
+  }
+}

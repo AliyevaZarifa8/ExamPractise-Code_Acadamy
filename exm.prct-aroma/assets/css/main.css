@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  transition: 0.8;
+}
+header nav #img-icon {
+  display: flex;
+  column-gap: 20vh;
+  align-items: center;
+}
+header nav #img-icon #menu {
+  display: block;
+}
+header nav #img-icon #delete {
+  display: none;
+}
+header nav #ul {
+  display: flex;
+  column-gap: 38px;
+  align-items: center;
+  margin: auto 0;
+}
+header nav #ul .a-tag {
+  text-decoration: none;
+  color: black;
+}
+header nav #ul .a-tag:hover {
+  color: blue;
+}
+header nav #ul #dropdownMenuLink:hover {
+  color: blue;
+}
+header nav #ul #dropdownMenuLink::after {
+  display: none;
+}
+header nav .header-icon {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+header nav .header-icon i {
+  font-size: 20px;
+  color: rgb(84, 84, 205);
+}
+header nav .header-icon button {
+  border: 1px solid grey;
+  padding: 10px 39px;
+  border-radius: 23px;
+  font-weight: 600;
+}
+header nav .header-icon button:hover {
+  transition: 1s;
+  border-color: blue;
+}
+
+#hero-banner {
+  margin-top: 14vh;
+  position: relative;
+}
+#hero-banner #blue-color {
+  height: 98vh;
+  background-color: rgb(27, 66, 222);
+}
+#hero-banner img {
+  width: 32%;
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  height: 86.7vh;
+}
+#hero-banner #hero-text {
+  background-color: hsl(190, 27%, 96%);
+}
+#hero-banner #hero-text .hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  margin-left: 26vh;
+}
+#hero-banner #hero-text .hero-text h4 {
+  color: grey;
+}
+#hero-banner #hero-text .hero-text h1 {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+#hero-banner #hero-text .hero-text #hero-parag {
+  width: 100%;
+  display: flex;
+}
+#hero-banner #hero-text .hero-text #hero-parag p {
+  color: gray;
+  font-size: 18px;
+}
+#hero-banner #hero-text .hero-text button {
+  background-color: rgb(48, 48, 219);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 12px 39px;
+  font-weight: 500;
+}
+#hero-banner #hero-text .hero-text button:hover {
+  background-color: transparent;
+  border-color: rgb(35, 35, 223);
+  color: black;
+}
+
+#btn {
+  position: fixed;
+  bottom: 20px;
+  z-index: 20;
+}
+
+#dinamc-cards {
+  margin-top: 14vh;
+}
+#dinamc-cards #card-text p {
+  color: grey;
+}
+#dinamc-cards #card-text h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 38px;
+}
+#dinamc-cards #card-text h2::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  background-color: blue;
+  width: 34%;
+  bottom: -20%;
+  left: 41%;
+}
+#dinamc-cards #cards-dinamc #dinamc-card {
+  display: flex;
+  text-align: center;
+  border: none;
+  color: #000;
+  row-gap: 7px;
+  position: relative;
+  transition: all 2s;
+}
+#dinamc-cards #cards-dinamc #dinamc-card:hover .card-hover {
+  display: flex;
+}
+#dinamc-cards #cards-dinamc #dinamc-card:hover h4 {
+  color: blue;
+}
+#dinamc-cards #cards-dinamc #dinamc-card .card-hover {
+  background-color: white;
+  opacity: 0.8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  top: 29vh;
+  width: 100%;
+  height: 26%;
+}
+#dinamc-cards #cards-dinamc #dinamc-card .card-hover i {
+  background-color: rgb(70, 123, 236);
+  color: #fff;
+  padding: 14px;
+}
+#dinamc-cards #cards-dinamc #dinamc-card .card-hover i:hover {
+  background-color: blue;
+  color: rgb(234, 242, 249);
+  font-size: 20px;
+}
+#dinamc-cards #cards-dinamc #dinamc-card p {
+  color: grey;
+}
+#dinamc-cards #cards-dinamc #dinamc-card span {
+  color: grey;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  #dinamc-cards #card-text h2::after {
+    width: 28%;
+    bottom: -20%;
+    left: 33%;
+  }
+}
+
+#winter-sale {
+  background-image: url("../image/parallax-bg.png");
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#winter-sale #winter-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 16vh;
+  margin-left: 16vh;
+}
+#winter-sale #winter-text h2 {
+  font-size: 44px;
+  margin-bottom: 3vh;
+}
+#winter-sale #winter-text h4 {
+  font-size: 25px;
+}
+#winter-sale #winter-text p {
+  color: gray;
+}
+#winter-sale #winter-text button {
+  margin-top: 3vh;
+  background-color: rgb(48, 48, 219);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 12px 39px;
+  font-weight: 500;
+}
+#winter-sale #winter-text button:hover {
+  transition: 1s;
+  background-color: transparent;
+  border-color: rgb(35, 35, 223);
+  color: black;
+}
+
+#best-sellers #best-text {
+  margin: 8vh auto;
+}
+#best-sellers #best-text p {
+  color: grey;
+}
+#best-sellers #best-text h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+}
+#best-sellers #best-text h2::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  background-color: blue;
+  width: 23%;
+  bottom: -20%;
+  left: 18%;
+}
+#best-sellers .carousel-item {
+  height: 80vh;
+  background-color: transparent;
+}
+#best-sellers .carousel-item #dinamc-card {
+  display: flex;
+  text-align: center;
+  border: none;
+  color: #000;
+  row-gap: 7px;
+  position: relative;
+  transition: all 2s;
+}
+#best-sellers .carousel-item #dinamc-card:hover .card-hover {
+  display: flex;
+}
+#best-sellers .carousel-item #dinamc-card:hover h4 {
+  color: blue;
+}
+#best-sellers .carousel-item #dinamc-card .card-hover {
+  background-color: white;
+  opacity: 0.8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  top: 23vh;
+  width: 100%;
+  height: 27%;
+}
+#best-sellers .carousel-item #dinamc-card .card-hover i {
+  cursor: pointer;
+  background-color: rgb(70, 123, 236);
+  color: #fff;
+  padding: 14px;
+  opacity: 0.8;
+}
+#best-sellers .carousel-item #dinamc-card p {
+  color: grey;
+}
+#best-sellers .carousel-item #dinamc-card span {
+  color: grey;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#latest-news #latest-text {
+  margin: 8vh auto;
+}
+#latest-news #latest-text p {
+  color: grey;
+}
+#latest-news #latest-text h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+}
+#latest-news #latest-text h2::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  background-color: blue;
+  width: 18%;
+  bottom: -20%;
+  left: 22%;
+}
+#latest-news .latest-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  margin: 20px auto;
+  column-gap: 23px;
+}
+#latest-news .latest-card:hover h4 {
+  color: blue;
+}
+#latest-news .latest-card:hover a {
+  color: blue;
+}
+#latest-news .latest-card:hover img {
+  opacity: 0.9;
+}
+#latest-news .latest-card span {
+  color: gray;
+}
+#latest-news .latest-card span i {
+  margin-right: 30px;
+}
+#latest-news .latest-card h4 {
+  font-size: 20px;
+}
+#latest-news .latest-card p {
+  color: rgb(132, 129, 129);
+  font-size: 17px;
+}
+#latest-news .latest-card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+#latest-news .latest-card a i {
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #05274b;
+  color: #fff;
+  padding-top: 13px;
+  height: 14vh;
+  margin-top: 15vh;
+}
+footer p i,
+footer p span {
+  color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

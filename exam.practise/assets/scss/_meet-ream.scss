@@ -1,0 +1,44 @@
+#meet-team {
+  margin-top: 20vh;
+  #team-text {
+    text-align: center;
+    display: flex;
+    row-gap: 10px;
+    h1 {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 3%;
+        height: 3px;
+        background-color: red;
+        left: 48%;
+        bottom: -30%;
+      }
+    }
+    .parag {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        width: 60%;
+        color: gray;
+      }
+    }
+  }
+
+  .img-texts {
+    margin-top: 10vh;
+    text-align: center;
+
+    .img-text {
+      display: flex;
+      flex-direction: column;
+      .text {
+        background-color: rgb(194, 191, 186);
+        padding-top: 10px;
+      }
+    }
+  }
+}

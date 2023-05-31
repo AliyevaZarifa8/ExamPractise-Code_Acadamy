@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 12vh;
+
+    ul {
+      display: flex;
+      column-gap: 20px;
+      margin: auto 0;
+      height: 7vh;
+      align-items: center;
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: larger;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

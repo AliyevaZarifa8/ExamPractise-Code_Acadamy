@@ -1,0 +1,64 @@
+#our-services {
+  h1 {
+    margin-top: 7vh;
+    text-align: center;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 3%;
+      height: 3px;
+      background-color: red;
+      bottom: -20%;
+      left: 47%;
+    }
+  }
+  #parag {
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      color: grey;
+      width: 40%;
+    }
+  }
+  #cards {
+    display: flex;
+    row-gap: 20px;
+    #card {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      border: dashed red;
+      img {
+        width: 40%;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      #icon {
+        display: flex;
+        column-gap: 30px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        #edit {
+          color: green;
+        }
+        #delete {
+          color: red;
+        }
+        #basket {
+          color: yellow;
+        }
+      }
+    }
+  }
+}

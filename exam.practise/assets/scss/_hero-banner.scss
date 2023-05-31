@@ -1,0 +1,28 @@
+.carousel-caption {
+  top: 350px;
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    button {
+      padding: 14px 25px;
+      background-color: transparent;
+      border: 1px solid red;
+      color: #fff;
+      text-transform: uppercase;
+      width: 40%;
+      &:hover {
+        background-color: rgb(166, 38, 38);
+      }
+    }
+  }
+}

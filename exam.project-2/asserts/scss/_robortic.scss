@@ -1,0 +1,32 @@
+#rodortic {
+  margin-top: 5vh;
+  .robort-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: gray;
+    }
+  }
+  #dinamic-robort {
+    #cards {
+      #card {
+        text-align: center;
+        p {
+          width: 89%;
+        }
+        #details {
+          border: none;
+          padding: 7px 14px;
+          background-color: transparent;
+          border-radius: 7px;
+          margin-bottom: 10px;
+          &:hover {
+            background-color: #959bff;
+          }
+        }
+      }
+    }
+  }
+}

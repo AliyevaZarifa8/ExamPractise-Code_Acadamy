@@ -1,0 +1,23 @@
+#crud {
+  background-color: #f8f9fa;
+  padding: 50px;
+  .title {
+    text-align: center;
+    .paragss {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      p {
+        width: 60%;
+        font-size: large;
+        color: rgb(118, 108, 108);
+      }
+    }
+    #button {
+      border: none;
+      padding: 12px 19px;
+      background-color: #bc5148;
+      border-radius: 7px;
+    }
+  }
+}

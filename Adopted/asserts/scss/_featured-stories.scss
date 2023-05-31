@@ -1,0 +1,30 @@
+#featured-stories {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  row-gap: 20px;
+  .workthumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .happy-person {
+      background-size: cover;
+      height: 50vh;
+      width: 33%;
+    }
+
+    #workthumb-1 {
+      background-image: url("../image/work_thumb_1.jpg");
+    }
+    #workthumb-2 {
+      background-image: url("../image/work_thumb_2.jpg");
+    }
+    #workthumb-3 {
+      background-image: url("../image/work_thumb_3.jpg");
+    }
+  }
+}

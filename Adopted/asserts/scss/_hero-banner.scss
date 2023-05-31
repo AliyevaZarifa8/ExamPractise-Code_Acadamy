@@ -1,0 +1,35 @@
+#hero-banner {
+  .carousel-caption {
+    top: 300px;
+    .needhelp {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      h2 {
+        text-transform: uppercase;
+      }
+      .parag {
+        width: 100%;
+
+        p {
+          width: 90%;
+          text-align: left;
+          font-size: larger;
+        }
+      }
+      button {
+        width: 40%;
+        padding: 7px 14px;
+        border: none;
+        color: #fff;
+        font-size: 27px;
+        border-radius: 7px;
+        background-color: rgb(217, 97, 53);
+      }
+    }
+    #needgirl {
+      color: black;
+    }
+  }
+}

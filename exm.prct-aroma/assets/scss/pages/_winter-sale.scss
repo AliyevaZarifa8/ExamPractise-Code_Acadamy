@@ -1,0 +1,41 @@
+#winter-sale {
+  background-image: url("../image/parallax-bg.png");
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  #winter-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 16vh;
+    margin-left: 16vh;
+    h2 {
+      font-size: 44px;
+      margin-bottom: 3vh;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    p {
+      color: gray;
+    }
+
+    button {
+      margin-top: 3vh;
+      background-color: rgb(48, 48, 219);
+      color: #fff;
+      border: 2px solid transparent;
+      border-radius: 25px;
+      padding: 12px 39px;
+      font-weight: 500;
+      &:hover {
+        transition: 1s;
+        background-color: transparent;
+        border-color: rgb(35, 35, 223);
+        color: black;
+      }
+    }
+  }
+}

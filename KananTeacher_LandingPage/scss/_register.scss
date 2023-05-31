@@ -1,0 +1,53 @@
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 75, 161);
+  height: 84vh;
+  margin-top: 10vh;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+  label {
+    color: #fff;
+    font-size: 23px;
+  }
+  input {
+    padding: 4px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    color: cornflowerblue;
+    font-size: 20px;
+    &::placeholder {
+      color: cornflowerblue;
+      font-size: 19px;
+    }
+  }
+  #check {
+    accent-color: red;
+    width: 20px;
+    height: 20px;
+  }
+
+  select {
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 20px;
+    outline: none;
+  }
+  button {
+    padding: 5px 39px;
+    border: none;
+    background-color: rgb(7, 118, 174);
+    color: rgb(12, 45, 107);
+    font-weight: bold;
+    font-size: 20px;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
